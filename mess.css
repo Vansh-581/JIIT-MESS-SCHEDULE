@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    background-color: rgb(15, 13, 24);
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+
+    background-size: 60px 60px;
+
+}
+.glow{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle at center,
+    rgba(91, 79, 249, 0.2) 10%,
+    transparent 40%
+     rgba(91, 79, 249, 0.4) 20%,
+    transparent 20%
+    rgba(91, 79, 249, 0.6) 20%,
+    transparent 20%
+    ); 
+  
+    
+}
+header {
+    
+    z-index: 3;
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    color: azure;
+    text-shadow: white;
+    /* background: #000; */
+   
+}
+header h1{
+  
+  font-size: 3em;
+  font-weight: bold;
+  background: linear-gradient(to right, #4facfe, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  
+}
+.button{
+   height: 50px;
+    
+    background-color:transparent;
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+select{
+background-color: #0e0e1a;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size:medium;
+}
+select option{
+    background-color: #0e0e1a;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 12em;
+    /* height: 100%;
+    width: 100%; */
+
+}
+
+.card {
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 52), #272626);
+    margin: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    height: 24em;
+    width: 20em;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+card::after {
+    content: '';
+    height: 55px;
+    width: 100%;
+
+    position: absolute;
+    background-image: linear-gradient(to bottom right, rgb(41, 41, 227), #e10ffe);
+    border-radius: 00px;
+    z-index: -1;
+
+}
+
+.card:hover {
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 52), #7e5af3);
+
+    box-shadow: +5px 0px 20px rgb(41, 41, 227), -5px 0px 20px #e10ffe;
+    z-index: 1;
+    transform: scale(1.05);
+
+}
+
+.Day {
+    padding: 1em;
+    text-align: left;
+    color: white;
+    height: 50px;
+}
+
+.breakfast {
+    padding: 1em;
+    text-align: left;
+    color: white;
+    height: 50px;
+
+}
+
+p {
+    color: wheat;
+}
