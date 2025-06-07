@@ -9,6 +9,8 @@ body {
 
 }
 .glow{
+    z-index: 0; 
+    pointer-events: none;
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -48,7 +50,7 @@ header h1{
   
 }
 .button{
-   height: 50px;
+/*    height: 50px;
     
     background-color:transparent;
     display: flex;
@@ -57,7 +59,15 @@ header h1{
     left: 0;
     right: 0;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+          height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  margin-top: 1rem; 
+ 
 }
 select{
 background-color: #0e0e1a;
@@ -72,12 +82,20 @@ select option{
 }
 
 .container {
-    display: flex;
+        position: relative;
+  flex: 1; /* take remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem; /* add spacing from button */
+  padding-bottom: 1rem; /* space for footer */
+/*     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     flex-wrap: wrap;
-    top: 12em;
+    top: 12em; */
     /* height: 100%;
     width: 100%; */
 
@@ -131,4 +149,16 @@ card::after {
 
 p {
     color: wheat;
+}
+.footer {
+ text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: transparent;
+  /* position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: transparent; */
 }
